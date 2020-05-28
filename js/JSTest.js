@@ -1,4 +1,4 @@
 let admin, name;
-name = "Джон23";
+name = "Jon23";
 admin = name;
 alert(admin); 
