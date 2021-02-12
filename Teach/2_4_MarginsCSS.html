@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Margins во встраеваемом CSS</title>
     <style type="text/css">
         .red {
             color:red;
@@ -11,21 +11,22 @@
             font-size: 200%
         }
         #green {
-            color: green;
+            color: blue;
         }
         .underline {
             text-decoration: underline;
         }
         #first-section {
             color: blue;
-            background-color: pink;
+            background-color: lightgreen;
             width: 200px;
-            margin: 100px 50px;
+            margin-left: 150px;
 
         }
         #second-section {
-            background-color: yellow;
-            width: 200px;
+            background-color: lightblue;
+            width: 400px;
+            margin: 50px 20px 50px 20px;
 
         }
 
@@ -39,7 +40,7 @@
         <p>Какой-то <span class="underline">текст2</span></p>
     </div>
     <div id="second-section">
-        <p id="green">Какой-то текст3</p>
+        <p>Какой-то текст3</p>
         <h1 class="red">Какой-то Заголовок1</h1>
     </div>
     <div>
