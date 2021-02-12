@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Отступы во встраеваемом CSS</title>
+    <title>Внутренние отступы CSS</title>
     <style type="text/css">
         .red {
             color:red;
@@ -25,11 +25,18 @@
         }
         #second-section {
             background-color: lightblue;
-            width: 400px;
-            margin: 50px 20px 50px 20px;
+            width: 350px;
+            padding: 5px 10px 15px 20px;
 
         }
-
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        p {
+            margin: 0px;
+            padding: 0px;
+        }
     </style>
 </head>
 <body>
