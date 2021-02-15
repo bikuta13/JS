@@ -1,5 +1,5 @@
 #top_white {
-    width: 1200px;
+    width: 1050px;
     margin:0 auto;
     height: 40px;
 }
@@ -38,7 +38,7 @@ body {
 }
 #bell {
     height: 25px;
-    margin: 8px 11px;
+    margin: 8px 12px 0px 8px;
     float: left;
 }
 .topbar_section {
@@ -49,7 +49,7 @@ body {
     padding-right: 15px;
     border-left:1px #CCCCCC solid;
     float: left;
-    height: 27px;
+    height: 28px;
 }
 #tringlIMG {
     width: 10px;
@@ -75,46 +75,101 @@ body {
     width: 26px;
     margin-top: 6px;
 }
+.clear {
+    clear: both;
+ }
 #second_tool_bar {
+    border-top: 1px solid #CCCCCC;
     background-color: #BB1919;
-    height: 60px;
+    height: 62px;
     width: 100%;
 }
-#third_tool_bar {
-    background-color: #A91717;
-    height: 30px;
-}
-.clear-float {}
 #second_tool_bar_menu {
-    width: 1200px;
+    width: 1050px;
     margin:0 auto;
+    height: 60px;
 }
 h1 {
-    padding: o;
-    margin: 0 auto;
+    padding: 0;
+    margin:0;
     color: white;
     font-size: 40px;
     font-weight: normal;
     padding-top: 10px;
+    width: 120px;
     float: left;
 }
 #localnews {
-    float: right;
-    color: white;
     border: 1px #BB4545 solid;
-    width: 180px;
-    padding: 5px;
-    margin: 5px;
+    float: right;
+    width: 250px;
+    padding: 5px 5px 0px 10px;
+    margin: 5px 10px 0 0;
+
 }
 #localnews a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
+    position: relative;
+    top: -8px;
 
 }
 #localnews a:hover {
     text-decoration: underline;
+
 }
 #localnews img {
     height: 40px;
+}
+#third_tool_bar {
+    background-color: #A91717;
+    height: 35px;
+}
+#third_tool_bar_menu {
+    width: 1050px;
+    margin: 0 auto;
+}
+#third_tool_bar_menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    border-right:1px #BB4545 solid;
+    font-size: 15px;
+    position: relative;
+    top: 7px;
+}
+#third_tool_bar_menu a:hover {
+    text-decoration: underline;
+}
+.no_border {
+    border: none !important;
+}
+#tringlIMG2 {
+    height: 8px;
+    position: relative;
+    top: 6px;
+}
+#page_contener {
+    width: 1050px;
+    margin: 0 auto;
+}
+h2 {
+    font-weight: normal;
+    margin-top: 40px;
+    font-size: 20px;
+    border-bottom: 3px solid #A91717;
+    width: 105px;
+}
+h3 a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+h3 a:hover {
+    color: #1167a8;
+}
+#artical_sum {
+    color: #5a5a5a;
+    width: 280px;
 }
