@@ -1,5 +1,5 @@
 #top_white {
-    width: 1000px;
+    width: 1200px;
     margin:0 auto;
     height: 40px;
 }
@@ -38,7 +38,7 @@ body {
 }
 #bell {
     height: 25px;
-    margin: 8px;
+    margin: 8px 11px;
     float: left;
 }
 .topbar_section {
@@ -50,4 +50,71 @@ body {
     border-left:1px #CCCCCC solid;
     float: left;
     height: 27px;
+}
+#tringlIMG {
+    width: 10px;
+}
+#input_textdiv {
+    border-left:1px #CCCCCC solid;
+    float: left;
+    height: 40px;
+
+}
+#input_text {
+    background-color: #E4E4E4;
+    border: none;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 6px;
+    margin-left: 8px;
+
+}
+#loupicon {
+    width: 26px;
+    margin-top: 6px;
+}
+#second_tool_bar {
+    background-color: #BB1919;
+    height: 60px;
+    width: 100%;
+}
+#third_tool_bar {
+    background-color: #A91717;
+    height: 30px;
+}
+.clear-float {}
+#second_tool_bar_menu {
+    width: 1200px;
+    margin:0 auto;
+}
+h1 {
+    padding: o;
+    margin: 0 auto;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    padding-top: 10px;
+    float: left;
+}
+#localnews {
+    float: right;
+    color: white;
+    border: 1px #BB4545 solid;
+    width: 180px;
+    padding: 5px;
+    margin: 5px;
+}
+#localnews a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+#localnews a:hover {
+    text-decoration: underline;
+}
+#localnews img {
+    height: 40px;
 }
