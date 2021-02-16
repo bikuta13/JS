@@ -173,3 +173,14 @@ h3 a:hover {
     color: #5a5a5a;
     width: 280px;
 }
+#artical_sum img {
+    height: 15px;
+
+}
+#artical_sum a {
+    text-decoration: none;
+    color: #A91717;
+}
+#artical_sum a:hover {
+    color: #1167a8;
+}
