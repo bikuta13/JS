@@ -154,6 +154,9 @@ h1 {
     width: 1050px;
     margin: 0 auto;
 }
+#main_article {
+    height: 1050px;
+}
 h2 {
     font-weight: normal;
     margin-top: 40px;
@@ -171,16 +174,68 @@ h3 a:hover {
 }
 #artical_sum {
     color: #5a5a5a;
-    width: 280px;
+    width: 270px;
+    float: left;
 }
 #artical_sum img {
     height: 15px;
-
 }
-#artical_sum a {
+#date {
+    padding-right: 10px;
+}
+#div_artical_a {
     text-decoration: none;
     color: #A91717;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 10px;
 }
 #artical_sum a:hover {
     color: #1167a8;
+}
+#artical_contener {
+    float: left;
+    width: 700px;
+}
+#main_artical_img {
+    height: 230px;
+    float: right;
+    margin-left: 20px;
+}
+#artical_hr {
+    border-color:#A91717;
+    width: 50px;
+    float: left;
+}
+.atrical_a {
+    text-decoration: none;
+    color: black;
+
+}
+#artical_contener2 {
+    border-left: 1px solid #CCCCCC;
+    padding-left: 18px;
+    float: right;
+    width: 310px;
+}
+#artical_contener2 h4 {
+    font-weight: normal;
+    margin-top: 20px;
+    font-size: 25px;
+    color: #404040;
+}
+.video {
+    float: left;
+    margin-right: 10px;
+}
+.video_a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+}
+.video_a:hover {
+    color: #1167a8;
+}
+.date2 {
+    margin: 5px;
 }
