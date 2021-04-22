@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Цикл While</title>
+    </head>
+
+    <body>
+        <p><a href="../JS.html">Начальная страница</a></p>
+
+        <div id="tweetDiv"></div>
+
+        <script type="text/javascript">
+
+            var tweetsString = "";
+
+            var tweets = ["Morning everybody!", "I love coffee!", "Cornflakes for breakfast!", "Num num!"]
+
+            var i = 0;
+
+            while (i < tweets.length) { //lenght длина массива
+
+                tweetsString = tweetsString + "<p>" + tweets[i] + "</p>"; //благодаря "" получается вывести код за JS и использовать его как html
+
+                i++;
+
+            }
+            document.getElementById("tweetDiv").innerHTML = tweetsString;
+        </script>
+    </body>
+</html>

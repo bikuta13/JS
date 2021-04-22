@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Использование jQuery с iframe при наведении</title>
+        <link rel="stylesheet" href="../css/styles6.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+
+    <body>
+    <h3><a href="../jQuery.html">Начальная страница</a></h3>
+
+    <iframe width="560" height="315" src="http://www.codestars.com"></iframe>
+
+    <div id="circle"></div>
+
+    <script type="text/javascript">
+
+        $("#circle").hover(function () {// срабатывает при наведении на круг
+            $("iframe").attr("src", "https://ecowebhosting.co.uk");
+        })
+
+    </script>
+    </body>
+</html>

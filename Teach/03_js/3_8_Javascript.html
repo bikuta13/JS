@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Масивы</title>
+    </head>
+
+    <body>
+        <p><a href="../JS.html">Начальная страница</a></p>
+
+        <script type="text/javascript">
+
+            var myArray = new Array();//создание массива
+
+            myArray[0] = "pizza";//присвоение первому элемнту массива значения
+
+            myArray[1] = "chocolate";//присвоение второму элемнту массива значения
+
+            var tweets = ["Morning everybody!", "I love coffee!"];//создание массива
+
+            alert(tweets[1]);//ввывод второго элемента массива
+
+            tweets.push("Back to work!", "MyTweet");//добавление элемента массива
+
+            tweets.splice(1, 2);//удаление второго элемнта и кол-во удаляемых элементов
+
+            tweets.splice(1, 0, "Cornflakes for breakfast!");//добавление вторым элементом в массив
+
+            tweets.splice(2, 1, "New MyTweets", "Num num");//замена третьего элементом и добавление четвертого в массив
+
+            console.log(tweets);//отображение в консоли второго массива
+
+            console.log(myArray);
+
+        </script>
+    </body>
+</html>

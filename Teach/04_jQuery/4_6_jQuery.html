@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Исчезающий контент при помощи jQuery</title>
+        <link rel="stylesheet" href="../css/styles5.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+
+    <body>
+    <h3><a href="../jQuery.html">Начальная страница</a></h3>
+
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <p id="text1">Какой либо текст!</p>
+    <button id="button1">Нажми сюда для для того чтобы параграф исчез!</button>
+    <button id="button2">Другой способ!</button>
+    <script type="text/javascript">
+
+        $("div").click(function (){
+            $(this).fadeOut("slow", function () {//функция медленное исчезновение
+                alert("Объект исчез");// обратная функция используется после окончания предыдущей функции
+            });
+        });
+        $("#button1").click(function () {
+            if ($("#text1").css("display") == "none"){//проверка состояния display
+                 $("#text1").fadeIn("slow");
+            } else {
+                $("#text1").fadeOut("slow");
+            }
+        });
+        //второй способ через переменную при помощи второй кнопки
+        var textHiden = true;
+        $("#button2").click(function () {
+
+            if (textHiden) {
+                $("#text1").fadeOut("slow", function () {
+                    textHiden = false;
+                });
+            } else {
+                $("#text1").fadeIn("slow", function () {
+                    textHiden = true;
+                });
+            }
+        });
+    </script>
+    </body>
+</html>

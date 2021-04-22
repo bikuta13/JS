@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Игра 2 через фнкцию</title>
+    </head>
+
+    <body>
+    <p><a href="../JS.html">Начальная страница</a></p>
+
+    <p>Сколько пальцев загадали?</p>
+
+    <p>
+        <select id="myNumber">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </p>
+        <button id="guess">Подвердить кол-во пальцев!</button>
+    </>
+
+    <script type="text/javascript">
+
+        function doAGuess(correctAnswer) {
+
+            var guess = Math.random();
+            guess = guess * 6;
+            guess = Math.floor(guess);
+            if (guess == correctAnswer) {
+                return(true);
+            } else {
+                return(false);
+            }
+        }
+
+        document.getElementById("guess").onclick = function () {
+
+            var myNumber = document.getElementById("myNumber").value;
+
+            var gotIt = false;
+
+            var numberOfGuess = 1;
+
+            while (gotIt == false) {
+
+                if (doAGuess(myNumber) == true) {
+                    gotIt = true;
+                    alert("Угадал! Это было " + myNumber + "! Я угадал с " + numberOfGuess + " раза");
+                    // ]компьютер угадал число!
+                } else {
+                    numberOfGuess++;
+                    // Компьютер не угадал число!
+                }
+
+
+            }
+
+
+        }
+    </script>
+    </body>
+    </html>
+</html>

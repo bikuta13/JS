@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Использование jQuery с css</title>
+        <link rel="stylesheet" href="../css/styles5.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+
+    <body>
+    <h3><a href="../jQuery.html">Начальная страница</a></h3>
+
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+
+    <script type="text/javascript">
+
+        $("#circle").click(function () {// срабатывает при наведении на круг
+            $("#circle").css("width", "300px");
+            $("#circle").css("background-color", "red");
+            alert($("body").css("width"));//выводит данные подхватывая ширину и отображая её!
+        });
+
+        $(".square").click(function (){
+            $(this).css("display", "none");//this применяется только к объекту с которым взаимодествуешь!
+        });
+
+        $("div").click(function (){
+            if ($(this).attr("id")=="circle") {
+                alert("Вы нажали на Круг!");
+            } else {
+                alert("Вы нажали на Квадрат!");
+            }
+
+        });
+
+    </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Изменение текста!</title>
+    </head>
+
+    <body>
+        <p><a href="../JS.html">Начальная страница</a></p>
+
+        <p id="text">Hello World!</p>
+
+        <button id="myButton">Изменение текста!</button>
+
+        <p id="secondParagraph">Javascript is ...</p>
+
+        <button id="myButton2">Изменение текста2!</button>
+
+        <p id="thirdParagraph"></p>
+
+        <button id="myButton3">Добавление текста!</button>
+
+        <script type="text/javascript">
+
+            document.getElementById("myButton").onclick = function () {
+                document.getElementById("text").innerHTML = "Hello VIC!";
+            }
+            document.getElementById("myButton2").onclick = function () {
+                document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + "awesome!";
+            }
+            document.getElementById("myButton3").onclick = function () {
+                document.getElementById("thirdParagraph").innerHTML = "<H1>New text!</H1>";
+            }
+
+        </script>
+
+
+    </body>
+</html>

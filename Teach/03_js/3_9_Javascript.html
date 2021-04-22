@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Комманда If</title>
+    </head>
+
+    <body>
+        <p><a href="../JS.html">Начальная страница</a></p>
+
+        <p>Введите волшебное слово</p>
+
+        <p><input id="goodtext" type="text"></p>
+
+        <p><button id="goodtest">Подтвердить</button></p>
+
+        <script type="text/javascript">
+
+            document.getElementById("goodtest").onclick = function () {
+
+                var textEntered = document.getElementById("goodtext").value;
+
+                if (textEntered == "Спасибо") {
+                    alert("Вы угадали волшебное слово!");
+                } else  {
+                    alert("Вы не угадали волшебное слово!");
+                }
+            }
+        </script>
+    </body>
+</html>

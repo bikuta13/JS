@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Игра - собственная модификация!</title>
+    </head>
+
+    <body>
+        <p><a href="../JS.html">Начальная страница</a></p>
+
+        <p>Сколько пальцев я показываю?</p>
+
+        <p><input id="howFinger" type="text"> <button id="getFinger">Подтвердить</button></p>
+
+        <script type="text/javascript">
+
+            document.getElementById("getFinger").onclick = function () {
+
+                //Math.floor(Math.random() * 6)
+
+                var randomNumber = Math.random();
+
+                randomNumber = randomNumber * 5 + 1;
+
+                randomNumber = Math.floor(randomNumber);
+
+                if (document.getElementById("howFinger").value == randomNumber) {
+                    alert("Вы угадали!");
+                } else  {
+                    alert("Вы не угадали! Чило было = " + randomNumber);
+                }
+
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Цикл FOR</title>
+    </head>
+
+    <body>
+        <p><a href="../JS.html">Начальная страница</a></p>
+
+        <div id="tweetDiv"></div>
+
+        <script type="text/javascript">
+
+            var tweetsString = "";
+
+            var tweets = ["Morning everybody!", "I love coffee!", "Cornflakes for breakfast!", "Num num!"]
+
+            for (var i = 0; i < tweets.length; i++) { //lenght длина массива
+
+                tweetsString = tweetsString + "<p>" + tweets[i] + "</p>" //благодаря "" получается вывести код за JS и использовать его как html
+
+            }
+            document.getElementById("tweetDiv").innerHTML = tweetsString;
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+body {background-color: darkgray;
+    font-family: sans-serif;
+}
+#shape {
+    background-color: black;
+    display: none;
+    border-radius: 50%;
+    position: relative;
+}
+.bold {
+    font-weight: bold;
+}

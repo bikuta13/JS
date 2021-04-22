@@ -1,0 +1,93 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Verdana, Geneva, sans-serif;
+}
+.dws-wrapper {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ -moz-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ -o-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+}
+ul.nav {
+ padding: 0;
+ margin: 0;
+ display: flex;
+}
+.nav li {
+ list-style-type: none;
+}
+.nav li a {
+ display: block;
+ position: relative;
+ margin: 0 10px;
+ padding: 10px 15px;
+ color: #777777;
+ font-size: 20px;
+ text-decoration: none;
+ text-transform: uppercase;
+ overflow: hidden;
+ -webkit-transition:  .8s;
+ -moz-transition:  .8s;
+ -ms-transition:  .8s;
+ -o-transition:  .8s;
+ transition:  .8s;
+}
+.nav li a::before {
+ position: absolute;
+ content: '';
+ background: red;
+ bottom: 0;
+ left: -100%;
+ width: 100%;
+ height: 3px;
+ -webkit-transition:  .8s;
+ -moz-transition:  .8s;
+ -ms-transition:  .8s;
+ -o-transition:  .8s;
+ transition:  .8s;
+}
+.nav li a:hover {
+ color: #fff;
+}
+.nav li a:hover::before {
+ -webkit-animation: anim-nav .5s linear forwards;
+ -o-animation: anim-nav .5s linear forwards;
+ animation: anim-nav .5s linear forwards;
+}
+@keyframes anim-nav {
+ 50% {
+  left: 0;
+  bottom: 0;
+  height: 3px;
+ }
+ 100% {
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

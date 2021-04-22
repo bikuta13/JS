@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AJAX</title>
+        <link rel="stylesheet" href="../css/styles5.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+
+    <body>
+    <h3><a href="../jQuery.html">Начальная страница</a></h3>
+
+
+    <p></p>
+    <script type="text/javascript">
+
+       $.ajax("info.txt")
+           .done(function (data) {
+            $("p").html(data);
+       })
+           .fail(function () {
+            alert("Данные не получены!");
+       });
+    </script>
+    </body>
+</html>

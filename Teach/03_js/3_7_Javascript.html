@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Переменные</title>
+    </head>
+
+    <body>
+        <p><a href="../JS.html">Начальная страница</a></p>
+
+        <input id="text1" type="text">
+        <button id="changeText">Поменять текст!</button>
+        <p id="text2">This is some text</p>
+
+        <script type="text/javascript">
+
+            document.getElementById("changeText").onclick = function () {
+                var textEntered = "";
+
+                textEntered = document.getElementById("text1").value;
+                document.getElementById("text2").innerHTML = textEntered;
+
+                //    var x = 5, name = "привет!";
+                //    x = 20;
+                //    avert(x);
+            }
+        </script>
+    </body>
+</html>

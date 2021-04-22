@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Регулярные выражения!</title>
+        <link rel="stylesheet" href="../css/styles5.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+
+    <body>
+    <h3><a href="../jQuery.html">Начальная страница</a></h3>
+
+    <script type="text/javascript">
+
+       var regEx = /e/gi    //индексы: g ищет повторения искомых символов, i учитывает с другими регистрами
+       var string = "Regex is GrEat!"
+       var result = string.match(regEx);
+       alert(result);
+    </script>
+    </body>
+</html>

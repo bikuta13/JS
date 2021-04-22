@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+}
+#circle {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    margin: 10px;
+}
+.square {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 10px;
+}
+
+#hidenText {
+    display: none;
+}

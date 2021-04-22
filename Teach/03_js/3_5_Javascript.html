@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Изменение CSS</title>
+    </head>
+
+    <body>
+        <p><a href="../JS.html">Начальная страница</a></p>
+
+        <p id="text">Hello World!</p>
+
+        <button id="myButton">Изменение текста!</button>
+
+        <p id="secondParagraph">Javascript is ...</p>
+
+        <button id="myButton2">Изменение текста2!</button>
+
+        <p id="thirdParagraph"></p>
+
+        <button id="myButton3">Добавление текста!</button>
+
+        <p id="moreText">Какой-то текст!</p>
+
+        <button id="styleText">Удаление поля!</button>
+        <button id="styleText2">Изменение цвета!</button>
+        <button id="styleText3">Изменение размера!</button>
+
+        <script type="text/javascript">
+
+            document.getElementById("myButton").onclick = function () {
+                document.getElementById("text").innerHTML = "Hello VIC!";
+            }
+            document.getElementById("myButton2").onclick = function () {
+                document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + "awesome!";
+            }
+            document.getElementById("myButton3").onclick = function () {
+                document.getElementById("thirdParagraph").innerHTML = "<H1>New text!</H1>";
+            }
+            document.getElementById("styleText").onclick = function () {
+                document.getElementById("moreText").style.display="none";
+            }
+            document.getElementById("styleText2").onclick = function () {
+                document.getElementById("moreText").style.color="red";
+            }
+            document.getElementById("styleText3").onclick = function () {
+                document.getElementById("moreText").style.fontSize="50px";
+            }
+
+        </script>
+
+
+    </body>
+</html>

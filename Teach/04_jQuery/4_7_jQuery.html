@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Анимация контента</title>
+        <link rel="stylesheet" href="../css/styles5.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+
+    <body>
+    <h3><a href="../jQuery.html">Начальная страница</a></h3>
+
+    <div id="circle"></div>
+
+    <script type="text/javascript">
+
+        $("#circle").click(function () {
+            $(this).animate({//включаем анимацию добавляя конечные значения
+                width:"400px",
+                height:"400px",
+                marginLeft:"100px",
+                marginTop:"100px",
+            }, 2000, function () {//пост функция исполняется после предыдущей
+                $(this).css("background-color", "red");
+            });
+        });
+    </script>
+    </body>
+</html>

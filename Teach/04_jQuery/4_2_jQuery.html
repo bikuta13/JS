@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Использование jQuery с классами дивами и ид</title>
+        <link rel="stylesheet" href="../css/styles5.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+    </head>
+
+    <body>
+    <p><a href="../jQuery.html">Начальная страница</a></p>
+
+    <div id="circle"></div>
+    <div class="square"></div>
+    <div class="square"></div>
+    <script type="text/javascript">
+
+        $("div").click(function () {// может быть #circle или .square
+            alert("Вы нажали на div!")
+        })
+
+    </script>
+    </body>
+</html>
