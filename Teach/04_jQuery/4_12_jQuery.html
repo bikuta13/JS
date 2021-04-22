@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Draggables и Resizables</title>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <style>
+            #draggable { width: 150px; height: 150px; padding: 0.5em; }
+            #div2 {width: 200px; height: 200px; background-color: yellow}
+            #divResize {width: 200px; height: 200px; background-color: red}
+            #divResize2 {width: 200px; height: 200px; background-color: green}
+        </style>
+    </head>
+
+    <body>
+    <h3><a href="../jQuery.html">Начальная страница</a></h3>
+
+    <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+    </div>
+    <div id="div2">
+        <span>Текст</span>
+    </div>
+    <div id="divResize">
+        <span>Текст</span>
+    </div>
+    <div id="divResize2">
+        <span>Текст</span>
+    </div>
+
+    <script type="text/javascript">
+
+        $( function() {
+            $( "#draggable" ).draggable({axis:"y"});
+            $("span").draggable({containment:"parent"});
+            $("#divResize").resizable({
+                grid: 50,
+                alsoResize:"#divResize2",
+                resize: function (event, ui) {
+                    if ($("#divResize").width()>250) {
+                        alert("Уже шликом большой!");
+                    }
+                }
+            });
+            $("#divResize2").resizable();
+        });
+
+    </script>
+
+    </body>
+</html>
