@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accordion и Sortables</title>
+        <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        <style>
+            #square1 {width: 100px; height: 100px; background-color: red}
+            #square2 {width: 200px; height: 200px; background-color: gray}
+        </style>
+    </head>
+
+    <body>
+    <h3><a href="../jQuery.html">Начальная страница</a></h3>
+
+    <div id="accordion">
+        <h3>Первое поле</h3>
+        <div>Текст в первом поле!</div>
+        <h3>Второе поле</h3>
+        <div>
+            <p>Текст второго поля!</p>
+            <ul id="sortable">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </div>
+        <h3>Третье поле</h3>
+        <div>
+            <img src="../img/2021-02-07_19-34-28.png" height="266" width="940"/>
+        </div>
+        <h3>Четвертое поле</h3>
+        <div>Текст четвертого поля!</div>
+    </div>
+
+    <script type="text/javascript">
+
+        $( function() {
+            $("#accordion").accordion();
+            $("#sortable").sortable();
+        });
+
+    </script>
+
+    </body>
+</html>
