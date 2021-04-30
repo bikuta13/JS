@@ -2,31 +2,23 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Droppables</title>
+        <title>Большой проект</title>
         <link rel="stylesheet" href="jquery-ui-1.12.1/jquery-ui.css">
         <script type="text/javascript" src="jquery.min.js"></script>
         <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
         <style>
-            #draggable {width: 100px; height: 100px; background-color: red}
-            #droppable {width: 200px; height: 200px; background-color: gray}
+            #square1 {width: 100px; height: 100px; background-color: red}
+            #square2 {width: 200px; height: 200px; background-color: gray}
         </style>
     </head>
 
     <body>
     <h3><a href="../jQuery.html">Начальная страница</a></h3>
 
-    <div id="draggable"></div>
-    <div id="droppable"></div>
+
 
     <script type="text/javascript">
 
-        $ ("#draggable").draggable();
-        $("#droppable").droppable({
-            drop: function (event, ui) {
-                alert("Брошен");
-                console.log(event);
-            }
-        })
     </script>
 
     </body>
