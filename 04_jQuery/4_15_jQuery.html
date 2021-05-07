@@ -10,28 +10,21 @@
     </head>
 
     <body>
-    <h3><a href="../jQuery.html">Начальная страница</a></h3>
-
-        <div id="mainMenu">
-            <h1>CodePlayer</h1>
-            <div id="menuButton">
-                <button class="button">HTML</button>
-                <button class="button">CSS</button>
-                <button class="button">JavaScript</button>
-                <button class="button">Output</button>
+        <div id="header">
+            <div id="logo">CodePlayer</div>
+            <div id="buttonContainer">
+                <div class="toggleButton active" id="html">HTML</div>
+                <div class="toggleButton" id="css">CSS</div>
+                <div class="toggleButton" id="js">JavaScrypt</div>
+                <div class="toggleButton active" id="output">Output</div>
             </div>
         </div>
-    <div id="textDiv">
-        <input type="text" class="textBlock">
-        <input type="text" class="textBlock">
-        <input type="text" class="textBlock">
-        <input type="text" class="textBlock">
-    </div>
+        <div id="bodyContainer">
+            <textarea id="htmlTextArea">Hello</textarea>
+        </div>
 
 
-    <script type="text/javascript" src="../js/bigProject.js">
-
-    </script>
+    <script type="text/javascript" src="../js/bigProject.js"></script>
 
     </body>
 </html>
