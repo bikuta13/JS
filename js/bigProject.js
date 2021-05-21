@@ -7,4 +7,5 @@ $(".toggleButton").click(function () {
     $(this).toggleClass("active");
     $(this).removeClass("highlightedButton");
 });
-$("textarea").height($(window).height() - $("#header").height());
+$(".panel").height($(window).height() - $("#header").height() - 15);
+$(".panel").width(($(window).width() / 2) - 5);
